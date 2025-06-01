@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จับมือทำ | บัตรเสมาชิก</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👋 จับมือทำ</h1>
+    <p>สมัครใหม่เพื่อเริ่มกลุ่มทำเกม และสร้าง QR Code สำหรับเข้ากลุ่ม</p><form id="registerForm">
+  <input type="text" id="nickname" placeholder="ชื่อในวงการ" required>
+  <input type="text" id="facebook" placeholder="Facebook URL" required>
+  <input type="text" id="contact" placeholder="Discord / IG / Email" required>
+  <select id="role" required>
+    <option value="">ตำแหน่งที่ทำ</option>
+    <option value="Programmer">Programmer</option>
+    <option value="Artist">Artist</option>
+    <option value="Composer">Composer</option>
+    <option value="Writer">Writer</option>
+    <option value="Idea Giver">Idea Giver</option>
+  </select>
+  <select id="collab" required>
+    <option value="">ร่วมมือกับคนอื่นได้ไหม?</option>
+    <option value="Yes">ได้</option>
+    <option value="Not Sure">ยังไม่แน่ใจ</option>
+    <option value="No">ไม่ได้</option>
+  </select>
+  <button type="submit">ลงทะเบียน</button>
+</form>
+
+<div id="card" class="hidden">
+  <h2>🌟 บัตรสมาชิก “จับมือทำ”</h2>
+  <p id="cName"></p>
+  <p id="cFacebook"></p>
+  <p id="cContact"></p>
+  <p id="cRole"></p>
+  <p id="cCollab"></p>
+  <canvas id="qr"></canvas>
+</div>
+
+  </div>  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>  <script src="scripts.js"></script></body>
+      </html>
